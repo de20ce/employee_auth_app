@@ -1,0 +1,29 @@
+/* Center the video element and capture button */
+#videoElement {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+#captureBtn {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Styling for the container */
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* General form styling */
+form {
+    margin-top: 20px;
+}
+
+/* Alert messages styling */
+.alert {
+    margin-top: 20px;
+}

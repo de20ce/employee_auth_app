@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authenticate</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #videoElement {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="mt-5">Authenticate</h1>
+    <div class="mb-3">
+        <video id="videoElement" autoplay></video>
+    </div>
+    <button id="captureBtn" class="btn btn-primary mb-3">Capture</button>
+    <form id="uploadForm" action="/authenticate" method="post" enctype="multipart/form-data">
+        <input type="hidden" id="imageData" name="imageData">
+        <button type="submit" class="btn btn-primary">Authenticate</button>
+    </form>
+</div>
+<script>
+    const video = document.getElementById('videoElement');
+    const captureBtn = document.getElementById('captureBtn');
+    const imageDataInput = document.getElementById('imageData');
+    const uploadForm = document.getElementById('uploadForm');
+
+    // Access the device camera and stream to video element
+    navigator.mediaDevices.getUserMedia({ video: true })
+        .then((stream) => {
+            video.srcObject = stream;
+        })
+        .catch((err) => {
+            console.error("Error accessing webcam: ", err);
+        });
+
+    captureBtn.addEventListener('click', () => {
+        const canvas = document.createElement('canvas');
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        const context = canvas.getContext('2d');
+        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+        const imageDataURL = canvas.toDataURL('image/jpeg');
+        imageDataInput.value = imageDataURL;
+    });
+
+    uploadForm.addEventListener('submit', (event) => {
+        if (!imageDataInput.value) {
+            event.preventDefault();
+            alert('Please capture an image first.');
+        }
+    });
+</script>
+</body>
+</html>
