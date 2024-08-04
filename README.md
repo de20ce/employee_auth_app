@@ -35,15 +35,14 @@ I would like to thank all my previous students from EEIA 2023 involved:
 ### 📝 Citing
 ```
 @misc{WhannouDeDravo:2024,
-  Author = {Vincent, Whannou de Dravo and Landry, Bossou and Adonis, Nobime and Vivien, Ogoun and Konig, Koudogbo},
-  Title = {React Django Chatbot Boilerplate for Generative AI},
-  Year = {2023},
+  Author = {Vincent, Whannou de Dravo and Sidoine, Ague and Landry, Bossou  and Joaida, Akotenou},
+  Title = {Employee Auth App},
+  Year = {2024},
   Publisher = {GitHub},
   Journal = {GitHub repository},
-  Howpublished = {\url{https://github.com/de20ce/generative_AIs_boilerplate}}
+  Howpublished = {\url{https://github.com/de20ce/employee_auth_app}}
 }
 ```
-Adonis, Landry and Vivien contribute equally.
 
 # Acknowledgement
 
