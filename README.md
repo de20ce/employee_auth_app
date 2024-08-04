@@ -30,3 +30,25 @@ I would like to thank all my previous students from EEIA 2023 involved:
 > - [Alan **Orou N’Gobi**](https://github.com/FenosCaerys)
 
 
+
+# 
+### 📝 Citing
+```
+@misc{WhannouDeDravo:2024,
+  Author = {Vincent, Whannou de Dravo and Landry, Bossou and Adonis, Nobime and Vivien, Ogoun and Konig, Koudogbo},
+  Title = {React Django Chatbot Boilerplate for Generative AI},
+  Year = {2023},
+  Publisher = {GitHub},
+  Journal = {GitHub repository},
+  Howpublished = {\url{https://github.com/de20ce/generative_AIs_boilerplate}}
+}
+```
+Adonis, Landry and Vivien contribute equally.
+
+# Acknowledgement
+
+We are very grateful to all people from *La Fondation Vallet*, *Benin Excellence*, and *UNDP Benin* for this marvellous experience.
+
+# 🛡️ License
+
+See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).

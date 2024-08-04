@@ -2,7 +2,7 @@
 name = "employee-auth-app"
 version = "0.1.0"
 description = ""
-authors = ["vincent whannou de dravo <vincent.whannoudedravo@mehriso.com>"]
+authors = ["vincent whannou de dravo <vincent.whannou.de.dravo@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
